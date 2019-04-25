@@ -175,6 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Backpack\NewsCRUD\NewsCRUDServiceProvider::class
+
     ],
 
     /*
