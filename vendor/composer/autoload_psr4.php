@@ -68,6 +68,7 @@ return array(
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'BeyondCode\\DumpServer\\' => array($vendorDir . '/beyondcode/laravel-dump-server/src'),
     'Backpack\\NewsCRUD\\' => array($vendorDir . '/backpack/newscrud/src'),
+    'Backpack\\LogManager\\' => array($vendorDir . '/backpack/logmanager/src'),
     'Backpack\\Generators\\' => array($vendorDir . '/backpack/generators/src'),
     'Backpack\\CRUD\\' => array($vendorDir . '/backpack/crud/src'),
     'Backpack\\Base\\' => array($vendorDir . '/backpack/base/src'),

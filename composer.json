@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.1.3",
         "backpack/crud": "^3.6",
+        "backpack/logmanager": "^2.3",
         "backpack/newscrud": "^2.1",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",

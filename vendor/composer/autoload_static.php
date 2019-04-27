@@ -145,6 +145,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         array (
             'BeyondCode\\DumpServer\\' => 22,
             'Backpack\\NewsCRUD\\' => 18,
+            'Backpack\\LogManager\\' => 20,
             'Backpack\\Generators\\' => 20,
             'Backpack\\CRUD\\' => 14,
             'Backpack\\Base\\' => 14,
@@ -406,6 +407,10 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         array (
             0 => __DIR__ . '/..' . '/backpack/newscrud/src',
         ),
+        'Backpack\\LogManager\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/backpack/logmanager/src',
+        ),
         'Backpack\\Generators\\' => 
         array (
             0 => __DIR__ . '/..' . '/backpack/generators/src',
@@ -570,6 +575,9 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Backpack\\Generators\\Console\\Commands\\RequestBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/RequestBackpackCommand.php',
         'Backpack\\Generators\\Console\\Commands\\ViewBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ViewBackpackCommand.php',
         'Backpack\\Generators\\GeneratorsServiceProvider' => __DIR__ . '/..' . '/backpack/generators/src/GeneratorsServiceProvider.php',
+        'Backpack\\LogManager\\LogManagerServiceProvider' => __DIR__ . '/..' . '/backpack/logmanager/src/LogManagerServiceProvider.php',
+        'Backpack\\LogManager\\app\\Classes\\LogViewer' => __DIR__ . '/..' . '/backpack/logmanager/src/app/Classes/LogViewer.php',
+        'Backpack\\LogManager\\app\\Http\\Controllers\\LogController' => __DIR__ . '/..' . '/backpack/logmanager/src/app/Http/Controllers/LogController.php',
         'Backpack\\NewsCRUD\\NewsCRUDServiceProvider' => __DIR__ . '/..' . '/backpack/newscrud/src/NewsCRUDServiceProvider.php',
         'Backpack\\NewsCRUD\\app\\Http\\Controllers\\Admin\\ArticleCrudController' => __DIR__ . '/..' . '/backpack/newscrud/src/app/Http/Controllers/Admin/ArticleCrudController.php',
         'Backpack\\NewsCRUD\\app\\Http\\Controllers\\Admin\\CategoryCrudController' => __DIR__ . '/..' . '/backpack/newscrud/src/app/Http/Controllers/Admin/CategoryCrudController.php',
