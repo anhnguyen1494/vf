@@ -175,7 +175,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Backpack\NewsCRUD\NewsCRUDServiceProvider::class
+        Backpack\NewsCRUD\NewsCRUDServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class
 
     ],
 

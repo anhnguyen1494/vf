@@ -76,6 +76,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'Psr\\Cache\\' => 10,
             'Prologue\\Alerts\\' => 16,
             'PhpParser\\' => 10,
         ),
@@ -93,6 +94,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         ),
         'L' => 
         array (
+            'League\\Flysystem\\Cached\\' => 24,
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
             'Laracasts\\Generators\\' => 21,
@@ -144,6 +146,8 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'B' => 
         array (
             'BeyondCode\\DumpServer\\' => 22,
+            'Barryvdh\\elFinderFlysystemDriver\\' => 33,
+            'Barryvdh\\Elfinder\\' => 18,
             'Backpack\\NewsCRUD\\' => 18,
             'Backpack\\LogManager\\' => 20,
             'Backpack\\Generators\\' => 20,
@@ -275,6 +279,10 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'Prologue\\Alerts\\' => 
         array (
             0 => __DIR__ . '/..' . '/prologue/alerts/src',
@@ -294,6 +302,10 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'League\\Flysystem\\Cached\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -403,6 +415,14 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         array (
             0 => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src',
         ),
+        'Barryvdh\\elFinderFlysystemDriver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src',
+        ),
+        'Barryvdh\\Elfinder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src',
+        ),
         'Backpack\\NewsCRUD\\' => 
         array (
             0 => __DIR__ . '/..' . '/backpack/newscrud/src',
@@ -471,6 +491,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Admin\\ArticleCrudController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ArticleCrudController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -486,6 +507,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Article' => __DIR__ . '/../..' . '/app/Models/Article.php',
         'App\\Models\\BackpackUser' => __DIR__ . '/../..' . '/app/Models/BackpackUser.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -588,6 +610,16 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Backpack\\NewsCRUD\\app\\Models\\Article' => __DIR__ . '/..' . '/backpack/newscrud/src/app/Models/Article.php',
         'Backpack\\NewsCRUD\\app\\Models\\Category' => __DIR__ . '/..' . '/backpack/newscrud/src/app/Models/Category.php',
         'Backpack\\NewsCRUD\\app\\Models\\Tag' => __DIR__ . '/..' . '/backpack/newscrud/src/app/Models/Tag.php',
+        'Barryvdh\\Elfinder\\Connector' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Connector.php',
+        'Barryvdh\\Elfinder\\Console\\PublishCommand' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Console/PublishCommand.php',
+        'Barryvdh\\Elfinder\\Elfinder' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Elfinder.php',
+        'Barryvdh\\Elfinder\\ElfinderController' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/ElfinderController.php',
+        'Barryvdh\\Elfinder\\ElfinderServiceProvider' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/ElfinderServiceProvider.php',
+        'Barryvdh\\Elfinder\\Session\\LaravelSession' => __DIR__ . '/..' . '/barryvdh/laravel-elfinder/src/Session/LaravelSession.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Cache\\SessionStore' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Cache/SessionStore.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Driver' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Driver.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Plugin\\GetUrl' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Plugin/GetUrl.php',
+        'Barryvdh\\elFinderFlysystemDriver\\Plugin\\HasDir' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/src/Plugin/HasDir.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',
         'BeyondCode\\DumpServer\\Dumper' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/Dumper.php',
@@ -2700,6 +2732,17 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedTrait.php',
         'League\\Flysystem\\Adapter\\Polyfill\\StreamedWritingTrait' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/Polyfill/StreamedWritingTrait.php',
         'League\\Flysystem\\Adapter\\SynologyFtp' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/SynologyFtp.php',
+        'League\\Flysystem\\Cached\\CacheInterface' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/CacheInterface.php',
+        'League\\Flysystem\\Cached\\CachedAdapter' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/CachedAdapter.php',
+        'League\\Flysystem\\Cached\\Storage\\AbstractCache' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/AbstractCache.php',
+        'League\\Flysystem\\Cached\\Storage\\Adapter' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Adapter.php',
+        'League\\Flysystem\\Cached\\Storage\\Memcached' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Memcached.php',
+        'League\\Flysystem\\Cached\\Storage\\Memory' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Memory.php',
+        'League\\Flysystem\\Cached\\Storage\\Noop' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Noop.php',
+        'League\\Flysystem\\Cached\\Storage\\PhpRedis' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/PhpRedis.php',
+        'League\\Flysystem\\Cached\\Storage\\Predis' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Predis.php',
+        'League\\Flysystem\\Cached\\Storage\\Psr6Cache' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Psr6Cache.php',
+        'League\\Flysystem\\Cached\\Storage\\Stash' => __DIR__ . '/..' . '/league/flysystem-cached-adapter/src/Storage/Stash.php',
         'League\\Flysystem\\Config' => __DIR__ . '/..' . '/league/flysystem/src/Config.php',
         'League\\Flysystem\\ConfigAwareTrait' => __DIR__ . '/..' . '/league/flysystem/src/ConfigAwareTrait.php',
         'League\\Flysystem\\Directory' => __DIR__ . '/..' . '/league/flysystem/src/Directory.php',
@@ -3686,6 +3729,10 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Prophecy\\Prophet' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Prophet.php',
         'Prophecy\\Util\\ExportUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/ExportUtil.php',
         'Prophecy\\Util\\StringUtil' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Util/StringUtil.php',
+        'Psr\\Cache\\CacheException' => __DIR__ . '/..' . '/psr/cache/src/CacheException.php',
+        'Psr\\Cache\\CacheItemInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemInterface.php',
+        'Psr\\Cache\\CacheItemPoolInterface' => __DIR__ . '/..' . '/psr/cache/src/CacheItemPoolInterface.php',
+        'Psr\\Cache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/cache/src/InvalidArgumentException.php',
         'Psr\\Container\\ContainerExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerExceptionInterface.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'Psr\\Container\\NotFoundExceptionInterface' => __DIR__ . '/..' . '/psr/container/src/NotFoundExceptionInterface.php',
@@ -3894,6 +3941,7 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'RecursiveCallbackFilterIterator' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeLocalFileSystem.class.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -4640,6 +4688,37 @@ class ComposerStaticInit635495658b0b58146486aaf7cd2c7dba
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'elFinder' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
+        'elFinderAbortException' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
+        'elFinderConnector' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderConnector.class.php',
+        'elFinderEditor' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/editor.php',
+        'elFinderEditorOnlineConvert' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/OnlineConvert/editor.php',
+        'elFinderEditorZipArchive' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/ZipArchive/editor.php',
+        'elFinderEditorZohoOffice' => __DIR__ . '/..' . '/studio-42/elfinder/php/editors/ZohoOffice/editor.php',
+        'elFinderLibGdBmp' => __DIR__ . '/..' . '/studio-42/elfinder/php/libs/GdBmp.php',
+        'elFinderPlugin' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderPlugin.php',
+        'elFinderPluginAutoResize' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/AutoResize/plugin.php',
+        'elFinderPluginAutoRotate' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/AutoRotate/plugin.php',
+        'elFinderPluginNormalizer' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Normalizer/plugin.php',
+        'elFinderPluginSanitizer' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Sanitizer/plugin.php',
+        'elFinderPluginWatermark' => __DIR__ . '/..' . '/studio-42/elfinder/php/plugins/Watermark/plugin.php',
+        'elFinderSession' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderSession.php',
+        'elFinderSessionInterface' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderSessionInterface.php',
+        'elFinderVolumeBox' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeBox.class.php',
+        'elFinderVolumeDriver' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDriver.class.php',
+        'elFinderVolumeDropbox' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDropbox.class.php',
+        'elFinderVolumeDropbox2' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeDropbox2.class.php',
+        'elFinderVolumeFTP' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeFTP.class.php',
+        'elFinderVolumeFlysystem' => __DIR__ . '/..' . '/barryvdh/elfinder-flysystem-driver/elFinderVolumeFlysystem.php',
+        'elFinderVolumeFlysystemGoogleDriveCache' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderFlysystemGoogleDriveNetmount.php',
+        'elFinderVolumeFlysystemGoogleDriveNetmount' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderFlysystemGoogleDriveNetmount.php',
+        'elFinderVolumeGoogleDrive' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeGoogleDrive.class.php',
+        'elFinderVolumeGroup' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeGroup.class.php',
+        'elFinderVolumeLocalFileSystem' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeLocalFileSystem.class.php',
+        'elFinderVolumeMySQL' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeMySQL.class.php',
+        'elFinderVolumeOneDrive' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeOneDrive.class.php',
+        'elFinderVolumeTrash' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeTrash.class.php',
+        'elFinderVolumeTrashMySQL' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderVolumeTrashMySQL.class.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
