@@ -1,0 +1,483 @@
+.menu-top{
+    height: 70px;
+}
+.logo-menu{
+    margin-right: 3%;
+}
+.link-menu{
+    margin-right: 6%;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.link-menu:hover{
+    color: #ff9933;
+    text-decoration: none;
+}
+.first-intro{
+    margin-top: 30px;
+}
+.img-fi{
+    padding-right: 0;
+}
+.text-fi{
+    padding-top: 100px;
+    text-align: center;
+}
+.text-fi p{
+    max-width: 400px;
+    margin-bottom: 0;
+}
+.text-fi h1{
+    color: #ff9933;
+    font-weight: bold;
+    font-size: 80px;
+}
+.text-fi .btn-primary{
+    margin-top: 15px;
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+.text-fi .btn-primary:hover {
+    color: #fff;
+    background-color: #2d2d2d;
+    border-color: #2d2d2d;
+}
+.text-fi .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 6, 13, 0.5);
+}
+.text-fi .btn-primary:not(:disabled):not(.disabled):active{
+    background-color: gray;
+    border-color: gray;
+}
+.text-si{
+    padding-top: 100px;
+}
+.text-si h3,.text-ti h3,.invest-4i h3,.text-ci h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-si h3 span,.text-si h6,.text-ti h3 span,.text-ti h6,.invest-4i h3 span,.invest-4i h6,.text-ci h3 span,.text-ci h6{
+    color: #ff9933;
+}
+.text-si h6{
+    margin-bottom: 70px;
+}
+.text-si h6 span,.text-ti h6 span,.invest-4i h6 span,.text-ci h6 span{
+    padding: 3px 10px;
+    background: white;
+}
+.third-intro{
+    margin-top: 70px;
+}
+.pl-10{
+    padding-left: 10%;
+}
+.pr-10{
+    padding-right: 10%;
+}
+.img-ti{
+    width: 80%;
+    margin: 35px auto 0;
+}
+.desc-img-ti{
+    padding: 0 15px;
+}
+.desc-title-img-ti{
+    color: #ff9933;
+    font-weight: bold;
+    min-height: 50px;
+}
+.fourth-intro{
+    margin-top: 150px;
+}
+.invest-4i p{
+    max-width: 400px;
+    margin-bottom: 0;
+}
+.customer-4i{
+    color: white;
+    background: #ff9933;
+}
+.customer-4i p{
+    max-width: 400px;
+    margin-bottom: 0;
+}
+.invest-content-4i,.customer-content-4i{
+    padding: 20px 50px;
+}
+.customer-4i h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.customer-4i h6 span{
+    padding: 3px 10px 3px 0;
+    background: #ff9933;
+}
+.list-item{
+    width: 90%;
+    margin: 120px auto 80px;
+}
+.s-item{
+    position: relative;
+}
+.overlay-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.s-item:hover .overlay-item{
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.text-ci{
+    position: relative;
+}
+.text-ci p{
+    max-width: 400px;
+    margin-bottom: 0;
+}
+.text-ci .text-ci-bottom{
+    position: absolute;
+    bottom: 0;
+    color: #ff9933;
+    font-style: italic;
+}
+.map-ci{
+    overflow:hidden;
+    padding-bottom: 30%;
+    position:relative;
+    height:0;
+}
+.map-ci iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.contact-intro{
+    margin-bottom: 100px;
+}
+.footer{
+    background: #060610;
+    color: white;
+    height: 60px;
+}
+@media (min-width: 300px) {
+    /*--------*/
+    .wrapper{
+        background: white;
+        background-size: 100%;
+    }
+    .link-menu {
+        font-size: 12px;
+        margin-right: 3%;
+    }
+    .text-fi h1 {
+        font-size: 70px;
+    }
+    .text-fi {
+         padding-top: 20px;
+    }
+    .invest-content-4i, .customer-content-4i {
+        padding: 20px 20px;
+    }
+    .contact-intro .pl-10{
+        padding: 0;
+    }
+    .contact-intro .text-ci{
+        text-align: center;
+        min-height: 200px;
+        margin-bottom: 30px;
+    }
+    .contact-intro .text-ci-bottom{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-intro .text-ci p{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+    .map-ci{
+        padding-bottom: 50%;
+    }
+    .contact-intro{
+        margin-bottom: 30px;
+    }
+    .pl-10{
+        padding-left: 15px;
+    }
+    .pr-10{
+        padding-right: 15px;
+    }
+    .img-fi{
+        display: none;
+    }
+    .img-si img{
+        height: 300px;
+        margin-top: 30px;
+    }
+    .text-si {
+        padding-top: 30px;
+    }
+    .text-si h6 {
+        margin-bottom: 25px;
+    }
+    .text-si,.text-si h3,.text-si h6{
+        text-align: center!important;
+    }
+    .text-si h3, .text-ti h3, .invest-4i h3, .text-ci h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .text-ti{
+        text-align: center;
+    }
+    .fourth-intro {
+        margin-top: 50px;
+    }
+    .invest-4i,.customer-4i{
+        text-align: center!important;
+    }
+    .customer-4i h3{
+        font-size: 25px;
+    }
+    .footer{
+        display: block!important;
+        height: 70px;
+    }
+    .footer span{
+        display: block;
+    }
+
+}
+@media (min-width: 576px) {
+    .img-fi{
+        display: none;
+    }
+    .img-si img{
+        height: 300px;
+        margin-top: 30px;
+    }
+    .text-si {
+        padding-top: 30px;
+    }
+    .text-si h6 {
+        margin-bottom: 25px;
+    }
+    .text-si,.text-si h3,.text-si h6{
+        text-align: center!important;
+    }
+    .text-si h3, .text-ti h3, .invest-4i h3, .text-ci h3 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .text-ti{
+        text-align: center;
+    }
+    .fourth-intro {
+        margin-top: 50px;
+    }
+    .invest-4i,.customer-4i{
+        text-align: center!important;
+    }
+    .customer-4i h3{
+        font-size: 25px;
+    }
+    .footer{
+        display: block!important;
+        height: 60px;
+    }
+    .footer span{
+        display: block;
+    }
+    .text-fi p,.invest-4i p,.customer-4i p{
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer{
+        display: flex!important;
+        height: 60px;
+    }
+    .footer span{
+        display: inline;
+    }
+    .customer-4i h3{
+        font-size: 40px;
+    }
+    .invest-4i{
+        text-align: right!important;
+    }
+    .customer-4i{
+        text-align: left!important;
+    }
+    .fourth-intro {
+        margin-top: 150px;
+    }
+    .wrapper{
+        background: url("/frontend/images/bg-1200.png");
+        background-size: 100%;
+    }
+    .link-menu{
+        margin-right: 6%;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+    .contact-intro{
+        margin-bottom: 50px;
+    }
+    .customer-4i p {
+        max-width: 400px;
+    }
+    .img-fi{
+        display: block;
+    }
+    .img-fi-mb{
+        display: none;
+    }
+    .text-fi{
+        text-align: left;
+    }
+    .img-si img{
+        height: auto;
+        margin-top: 0px;
+    }
+    .text-si {
+        padding-top: 100px;
+    }
+    .text-si h6 {
+        margin-bottom: 70px;
+    }
+    .text-si h3, .text-ti h3, .invest-4i h3, .text-ci h3 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .text-ti{
+        text-align: left;
+    }
+    .text-si{
+        text-align: left!important;
+    }
+    .text-si h3, .text-si h6 {
+        text-align: right!important;
+    }
+    .text-fi p,.invest-4i p,.customer-4i p{
+        max-width: 400px;
+    }
+    .contact-intro .text-ci p{
+        max-width: 400px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .map-ci {
+        padding-bottom: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .invest-content-4i, .customer-content-4i {
+        padding: 20px 50px;
+    }
+    .contact-intro {
+        margin-bottom: 100px;
+    }
+    .contact-intro .text-ci {
+         text-align: left;
+         min-height: auto!important;
+         margin-bottom: 0px;
+    }
+    .pl-10{
+        padding-left: 10%;
+    }
+    .pr-10{
+        padding-right: 10%;
+    }
+    .contact-intro .pl-10{
+        padding-left: 10%;
+    }
+    .contact-intro .text-ci-bottom {
+        width: auto!important;
+        text-align: left;
+    }
+}
+
+/* The Modal (background) */
+.modal-img {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content-img, #caption-img {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close-img {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-img:hover,
+.close-img:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content-img {
+        width: 100%;
+    }
+}
