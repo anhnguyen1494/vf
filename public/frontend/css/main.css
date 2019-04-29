@@ -3,3 +3,62 @@
     padding: 0;
     font-family: 'Montserrat Alternates', sans-serif;
 }
+.menu-top{
+    height: 70px;
+}
+.logo-menu{
+    margin-right: 3%;
+}
+.link-menu{
+    margin-right: 6%;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.link-menu:hover{
+    color: #ff9933;
+    text-decoration: none;
+}
+.footer{
+    background: #060610;
+    color: white;
+    height: 60px;
+}
+@media (min-width: 300px) {
+    .link-menu {
+        font-size: 12px;
+        margin-right: 3%;
+    }
+    .footer{
+        display: block!important;
+        height: 70px;
+    }
+    .footer span{
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer{
+        display: block!important;
+        height: 60px;
+    }
+    .footer span{
+        display: block;
+    }
+}
+@media (min-width: 768px) {
+    .link-menu{
+        margin-right: 6%;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+    }
+    .footer{
+        display: flex!important;
+        height: 60px;
+    }
+    .footer span{
+        display: inline;
+    }
+}

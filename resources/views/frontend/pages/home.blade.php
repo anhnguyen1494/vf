@@ -14,15 +14,9 @@
 @endsection
 
 @section('main')
+    @include('frontend.includes.menu')
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-xl-12 col-lg-12 col-md-12 menu-top d-flex align-items-center justify-content-end">
-                <a href="/" class="logo-menu" title="Trang chủ"><img
-                            src="{{ asset('/frontend/images/logo-nav-home.png') }}" alt=""></a>
-                <a href="/" class="link-menu" title="Trang chủ">Trang chủ</a>
-                <a href="/" class="link-menu" title="Tin tức">Tin tức</a>
-                <a href="/" class="link-menu" title="Liên hệ">Liên hệ</a>
-            </nav>
             <div class="col-xl-12 col-lg-12 col-md-12 first-intro">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 img-fi-mb text-right">
@@ -169,12 +163,9 @@
                     </div>
                 </div>
             </div>
-            <footer class="col-xl-12 col-lg-12 col-md-12 pl-10 pr-10 footer d-flex justify-content-between align-items-center">
-                <span>Bản quyền thuộc về VuFood ltd</span>
-                <span>Địa chỉ: 56 Thụy Khê, Tây Hồ, Hà Nội, Việt Nam</span>
-            </footer>
         </div>
     </div>
+    @include('frontend.includes.footer')
 
     <!-- The Modal IMG-->
     <div id="md-img" class="modal-img">
