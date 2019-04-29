@@ -13,9 +13,9 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <title>
         @hasSection('title')
-            @yield('title') | Văn Phong Camera
+            VuFood - @yield('title')
         @else
-            Trang chủ | Văn Phong Camera
+            VuFood - Trang chủ
         @endif
     </title>
     @yield('meta')
