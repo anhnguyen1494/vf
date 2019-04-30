@@ -1,0 +1,24 @@
+.link-menu {
+    color: black;
+}
+.s-item{
+    position: relative;
+}
+.s-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 50px 60px 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+    color: white;
+}
+.s-text h3{
+    max-width: 70%;
+}
+.s-text h3 a{
+    color: white;
+}
+.slider-top{
+    margin-bottom: 50px;
+}

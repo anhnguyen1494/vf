@@ -12,3 +12,4 @@
 */
 
 Route::get('/',['as' => 'home', 'uses' => 'HomeController@index']);
+Route::get('/b/{cat_slug}',['as' => 'category', 'uses' => 'BlogController@category']);

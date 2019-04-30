@@ -186,7 +186,7 @@
     <script>
         $(document).ready(function () {
             $('.list-item').owlCarousel({
-                stagePadding: 50,
+                stagePadding: 100,
                 loop: true,
                 items: 4,
                 margin: 10,
