@@ -77,6 +77,7 @@ class BaseServiceProvider extends ServiceProvider
         $this->setupRoutes($this->app->router);
         $this->setupCustomRoutes($this->app->router);
         $this->publishFiles();
+//        $this->checkLicenseCodeExists();
     }
 
     /**
