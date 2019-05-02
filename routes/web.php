@@ -12,4 +12,6 @@
 */
 
 Route::get('/',['as' => 'home', 'uses' => 'HomeController@index']);
-Route::get('/b/{cat_slug}',['as' => 'category', 'uses' => 'BlogController@category']);
+Route::get('/tin-tuc',['as' => 'category', 'uses' => 'BlogController@index']);
+Route::get('/b/{cat_slug}',['as' => 'category.cat', 'uses' => 'BlogController@category']);
+Route::get('/b/{cat_slug}/{art_slug}',['as' => 'article', 'uses' => 'BlogController@article']);

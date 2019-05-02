@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
-class Article extends Model
+class Category extends Model
 {
     use CrudTrait;
     use Sluggable, SluggableScopeHelpers;
@@ -18,17 +18,13 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'articles';
+    protected $table = 'categories';
     protected $primaryKey = 'id';
-    public $timestamps = true;
+    // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['slug', 'title', 'desc_short', 'content', 'image', 'status', 'category_id', 'featured', 'date'];
+    protected $fillable = ['name', 'slug', 'parent_id'];
     // protected $hidden = [];
     // protected $dates = [];
-    protected $casts = [
-        'featured'  => 'boolean',
-        'date'      => 'date',
-    ];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -39,7 +35,7 @@ class Article extends Model
     {
         return [
             'slug' => [
-                'source' => 'slug_or_title',
+                'source' => 'slug_or_name',
             ],
         ];
     }
@@ -56,14 +52,19 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function category()
+    public function parent()
     {
-        return $this->belongsTo('Backpack\NewsCRUD\app\Models\Category', 'category_id');
+        return $this->belongsTo('Backpack\NewsCRUD\app\Models\Category', 'parent_id');
     }
 
-    public function tags()
+    public function children()
     {
-        return $this->belongsToMany('Backpack\NewsCRUD\app\Models\Tag', 'article_tag');
+        return $this->hasMany('Backpack\NewsCRUD\app\Models\Category', 'parent_id');
+    }
+
+    public function articles()
+    {
+        return $this->hasMany('App\Models\Article');
     }
 
     /*
@@ -72,11 +73,11 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function scopePublished($query)
+    public function scopeFirstLevelItems($query)
     {
-        return $query->where('status', 'PUBLISHED')
-            ->where('date', '<=', date('Y-m-d'))
-            ->orderBy('date', 'DESC');
+        return $query->where('depth', '1')
+            ->orWhere('depth', null)
+            ->orderBy('lft', 'ASC');
     }
 
     /*
@@ -85,14 +86,14 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
-    // The slug is created automatically from the "title" field if no slug exists.
-    public function getSlugOrTitleAttribute()
+    // The slug is created automatically from the "name" field if no slug exists.
+    public function getSlugOrNameAttribute()
     {
         if ($this->slug != '') {
             return $this->slug;
         }
 
-        return $this->title;
+        return $this->name;
     }
 
     /*

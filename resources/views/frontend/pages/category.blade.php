@@ -2,7 +2,7 @@
 @section('title', 'Tin tức')
 @section('meta')
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
+    <meta property="og:title" content="Tin Tức"/>
     <meta property="og:image" content=""/>
     <meta property="og:description" content="">
 @endsection
@@ -18,27 +18,21 @@
     <div class="container-fluid">
         <div class="row">
             <div class="owl-carousel owl-theme slider-top mb-5">
-                <div class="s-item">
-                    <img src="{{ asset('frontend/images/category/slider-top.jpg') }}" alt="" class="d-block w-100">
-                    <div class="s-text">
-                        <h3><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</a></h3>
-                        <p class="s-date">28/04/2019</p>
+                @if(!empty($news_fea))
+                    @foreach($news_fea as $new_f)
+                    <div class="s-item">
+                        <img src="/{{ $new_f->image }}" alt="" class="d-block w-100">
+                        <div class="s-text">
+                            <h3>
+                                <a href="{{ route('article',['cat_slug' => $new_f->category->slug, 'art_slug' => $new_f->slug]) }}">
+                                    {{ $new_f->title }}
+                                </a>
+                            </h3>
+                            <p class="s-date">{{ date('d/m/Y',strtotime($new_f->date)) }}</p>
+                        </div>
                     </div>
-                </div>
-                <div class="s-item">
-                    <img src="{{ asset('frontend/images/category/slider-top.jpg') }}" alt="" class="d-block w-100">
-                    <div class="s-text">
-                        <h3><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</a></h3>
-                        <p class="s-date">28/04/2019</p>
-                    </div>
-                </div>
-                <div class="s-item">
-                    <img src="{{ asset('frontend/images/category/slider-top.jpg') }}" alt="" class="d-block w-100">
-                    <div class="s-text">
-                        <h3><a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</a></h3>
-                        <p class="s-date">28/04/2019</p>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>
@@ -47,56 +41,67 @@
             <div class="col-xl-8 col-lg-8 col-md-12 news mb-5">
                 <div class="row">
                     <h3 class="mb-5">TIN TỨC GẦN NHẤT</h3>
-                    @for($i=1;$i<5;$i++)
+                    @if(!empty($news))
+                    @foreach($news as $new)
+                        @php($link = route('article',['cat_slug' => $new->category->slug, 'art_slug' => $new->slug]))
                         <div class="col-xl-12 col-lg-12 col-md-12 blog-item">
                             <div class="row">
                                 <div class="col-xl-4 col-lg-4 col-md-4 img-blog">
-                                    <a href="#">
-                                        <img src="{{ asset('frontend/images/category/blog-img.jpg') }}" alt="" class="d-block w-100">
+                                    <a href="{{ $link }}">
+                                        <img src="/{{ $new->image  }}" alt="{{ $new->title }}" class="d-block w-100">
                                     </a>
                                 </div>
                                 <div class="col-xl-8 col-lg-8 col-md-8 text-blog">
                                     <h4 class="title-blog">
-                                        <a href="#">Lorem ipsum dolor sit amet</a>
+                                        <a href="{{ $link }}"
+                                        title="{{ $new->title }}">
+                                            {{ $new->title }}
+                                        </a>
                                     </h4>
                                     <p class="desc-blog">
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                                        {{ \Illuminate\Support\Str::limit($new->desc_short,75) }}
                                     </p>
                                     <p class="date-blog d-flex justify-content-between">
-                                        <span>27/04/2019</span>
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=#"
-                                           onclick="OpenWindow(this.href);return false;"><img src="{{ asset('frontend/images/category/share-fb.png') }}" alt=""></a>
+                                        <span>{{ date('d/m/Y',strtotime($new->date)) }}</span>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ $link }}"
+                                           onclick="OpenWindow(this.href);return false;">
+                                            <img src="{{ asset('frontend/images/category/share-fb.png') }}" alt="">
+                                        </a>
                                     </p>
                                 </div>
                                 <div class="bd-bot"></div>
                             </div>
                         </div>
-                    @endfor
+                    @endforeach
+                    @endif
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 events">
                 <div class="row">
                     <h3 class="mb-5">SỰ KIỆN</h3>
-                    @for($i=1;$i<5;$i++)
+                    @if(!empty($events))
+                        @foreach($events as $event)
+                            @php($link = route('article',['cat_slug' => $event->category->slug, 'art_slug' => $event->slug]))
                         <div class="col-xl-12 col-lg-12 col-md-12 event-item mb-3">
                             <div class="row">
                                 <div class="col-xl-3 col-lg-3 col-md-1 col-2 img-event d-flex justify-content-center align-items-center">
-                                    <a href="#" class="d-block w-100">
+                                    <a href="{{ $link }}" class="d-block w-100">
                                         <img src="{{ asset('frontend/images/category/hot.png') }}" alt="" class="d-block w-100">
                                     </a>
                                 </div>
                                 <div class="col-xl-9 col-lg-9 col-md-11 col-10 text-event">
                                     <h4 class="title-event">
-                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                                        <a href="{{ $link }}">{{ $event->title }}</a>
                                     </h4>
                                     <p class="date-event">
-                                        <span>27/04/2019</span>
+                                        <span>{{ date('d/m/Y',strtotime($event->date)) }}</span>
                                     </p>
                                 </div>
                                 <div class="bd-bot"></div>
                             </div>
                         </div>
-                    @endfor
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>
