@@ -2,6 +2,6 @@
     <a href="/" class="logo-menu" title="Trang chủ"><img
                 src="{{ asset('/frontend/images/logo-nav-home.png') }}" alt=""></a>
     <a href="/" class="link-menu" title="Trang chủ">Trang chủ</a>
-    <a href="/" class="link-menu" title="Tin tức">Tin tức</a>
-    <a href="/" class="link-menu" title="Liên hệ">Liên hệ</a>
+    <a href="/tin-tuc" class="link-menu" title="Tin tức">Tin tức</a>
+    <a href="/lien-he" class="link-menu" title="Liên hệ">Liên hệ</a>
 </nav>
