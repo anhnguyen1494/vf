@@ -1,0 +1,54 @@
+.link-menu {
+    color: black;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.form-re label{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.btn-check{
+    padding: 7px 10px;
+    background: white;
+    border-radius: 5px;
+}
+.form-re h3{
+    font-weight: bold;
+}
+.form-register{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, #ffc600 0%, #ff9933 100%);
+}
+.form-re .btn-primary{
+    background: #450c0c;
+    padding: 10px;
+    border-radius: 10px;
+}
+.customer{
+    background: #ff9933;
+    color: white;
+}
+.invest h3 span,.invest h6{
+    color: #ff9933;
+}
+.invest h6 span{
+    padding: 3px 10px;
+    background: white;
+}
+@media only screen and (max-width: 1025px) {
+    .btn-check{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .fr-img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 415px) {
+    .btn-check{
+        font-size: 10px;
+    }
+}

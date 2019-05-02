@@ -10,8 +10,6 @@
 @endsection
 
 @section('after_styles')
-    <link rel="stylesheet" href="{{ asset('/frontend/owl/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/frontend/owl/css/owl.theme.default.min.css') }}">
     <link href="{{ asset('/frontend/css/article.css') }}" rel="stylesheet" type="text/css"/>
     <style>
         .button-fb {
