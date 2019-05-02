@@ -1,0 +1,72 @@
+.link-menu {
+    color: black;
+}
+.text-event{
+    padding-left: 0;
+}
+.event-item p{
+    margin-bottom: 5px;
+}
+.title-event{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.title-event a{
+    color: #ff9933!important;
+}
+.date-event{
+    font-style: italic;
+    font-size: 10px;
+    color: gray;
+}
+.event-item:hover{
+    background: #ff9933;
+}
+.event-item:hover .date-event,.event-item:hover .title-event a{
+    color: white!important;
+}
+.event-item .bd-bot{
+    width: 100%;
+    margin: 10px 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.art-title{
+    color: #ff9933;
+}
+.art-desc-short{
+    color: gray;
+    font-size: 14px;
+}
+.art-content img{
+    max-width: 100%!important;
+}
+.rela-item h4 a{
+    color: black;
+    font-size: 16px;
+}
+.rela-item .bd-bot{
+    width: 100%;
+    margin: 10px 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+@media (min-width: 300px) {
+
+}
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+@media only screen and (max-width: 700px) {
+    .button-fb,.events{
+        display: none;
+    }
+}

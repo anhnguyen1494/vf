@@ -2,7 +2,7 @@
 @section('title', 'Tin tức')
 @section('meta')
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Tin Tức"/>
+    <meta property="og:title" content="VuFood - Tin Tức"/>
     <meta property="og:image" content=""/>
     <meta property="og:description" content="">
 @endsection
@@ -74,6 +74,9 @@
                         </div>
                     @endforeach
                     @endif
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        {{ $news->links() }}
+                    </div>
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-12 events">
