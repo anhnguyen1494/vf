@@ -17,6 +17,32 @@
     @include('frontend.includes.menu')
     <div class="container mt-5">
         <div class="row">
+            <div class="col-xl-12 col-lg-12 col-12 text-center pt-5 pb-5 customer">
+                <div class="customer-content-4i">
+                    <h3>KHÁCH HÀNG</h3>
+                    <h6><span>Chúng tôi luôn quan tâm</span></h6>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p class="mt-4">Liên hệ ngay với chúng tôi</p>
+                    <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">0876.969.969
+                    </p>
+                    <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">hotro@vufood.com.vn
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-12 text-center pt-5 pb-5 invest">
+                <div class="invest-content-4i">
+                    <h3>ĐẦU TƯ <span>VUFOOD</span></h3>
+                    <h6><span>Sinh lời ngay hôm nay</span></h6>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p class="mt-4">Liên hệ ngay với chúng tôi</p>
+                    <p>0876.969.969 <img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
+                                         class="ml-2"></p>
+                    <p>kinhdoanh@vufood.com.vn <img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
+                                                    alt="" class="ml-2"></p>
+                </div>
+            </div>
             <div class="col-xl-12 col-lg-12 col-md-12 form-register">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-img text-right pr-5">
@@ -61,32 +87,6 @@
                             <button type="submit" class="btn btn-primary col-xl-12 col-lg-12 col-12">ĐĂNG KÝ NHẬN TƯ VẤN</button>
                         </form>
                     </div>
-                </div>
-            </div>
-            <div class="col-xl-12 col-lg-12 col-12 text-center pt-5 pb-5 invest">
-                <div class="invest-content-4i">
-                    <h3>ĐẦU TƯ <span>VUFOOD</span></h3>
-                    <h6><span>Sinh lời ngay hôm nay</span></h6>
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua</p>
-                    <p class="mt-4">Liên hệ ngay với chúng tôi</p>
-                    <p>0876.969.969 <img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
-                                         class="ml-2"></p>
-                    <p>kinhdoanh@vufood.com.vn <img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
-                                                    alt="" class="ml-2"></p>
-                </div>
-            </div>
-            <div class="col-xl-12 col-lg-12 col-12 text-center pt-5 pb-5 customer">
-                <div class="customer-content-4i">
-                    <h3>KHÁCH HÀNG</h3>
-                    <h6><span>Chúng tôi luôn quan tâm</span></h6>
-                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua</p>
-                    <p class="mt-4">Liên hệ ngay với chúng tôi</p>
-                    <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">0876.969.969
-                    </p>
-                    <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">hotro@vufood.com.vn
-                    </p>
                 </div>
             </div>
         </div>
