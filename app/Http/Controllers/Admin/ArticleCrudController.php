@@ -94,7 +94,7 @@ class ArticleCrudController extends \Backpack\NewsCRUD\app\Http\Controllers\Admi
         ]);
         $this->crud->addField([    // Image
             'name' => 'image',
-            'label' => 'Image',
+            'label' => 'Image 500x287 (Featured item 836x288)',
             'type' => 'browse',
         ]);
         $this->crud->addField([    // SELECT
