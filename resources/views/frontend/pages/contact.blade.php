@@ -23,37 +23,38 @@
                         <img src="{{ asset('/frontend/images/contact/1may.png') }}" alt="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-register">
-                        <form action="" method="post" role="form" class="col-xl-9 col-lg-9 col-12 form-re">
+                        <form action="{{ route('contact.store') }}" method="post" role="form" class="col-xl-9 col-lg-9 col-12 form-re">
                             <h3 class="pb-3 border-bottom mb-3 mt-5">ĐĂNG KÝ TƯ VẤN</h3>
-
+                            {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="" placeholder="Họ và tên ">
+                                <input type="text" class="form-control" name="full_name" id="" placeholder="Họ và tên " required value="{{ old('full_name') }}">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="" placeholder="Email ">
+                                <input type="email" class="form-control" name="email" id="" placeholder="Email " required value="{{ old('email') }}">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" name="mobile" id="" placeholder="Số điện thoại">
+                                <input type="number" class="form-control" name="phone" id="" placeholder="Số điện thoại" required value="{{ old('phone') }}">
+                                <span style="color: red">{{ $errors->first('phone') }}</span>
                             </div>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="checkbox" name="location" value="hn" id="location_hn"> <label for="location_hn"> Hà Nội</label>
+                                        <input type="radio" name="address" value="Hà Nội" id="location_hn" required> <label for="location_hn"> Hà Nội</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="checkbox" name="location" value="hcm" id="location_hcm"> <label for="location_hcm"> TP Hồ Chí Minh</label>
+                                        <input type="radio" name="address" value="TP Hồ Chí Minh" id="location_hcm" required> <label for="location_hcm"> TP Hồ Chí Minh</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="checkbox" name="location" value="dn" id="location_dn"> <label for="location_dn"> Đà Nẵng</label>
+                                        <input type="radio" name="address" value="Đà Nẵng" id="location_dn" required> <label for="location_dn"> Đà Nẵng</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="checkbox" name="location" value="khac" id="location_khac"> <label for="location_khac"> Tỉnh thành khác</label>
+                                        <input type="radio" name="address" value="Tỉnh thành khác" id="location_khac" required> <label for="location_khac"> Tỉnh thành khác</label>
                                     </div>
                                 </div>
                             </div>
