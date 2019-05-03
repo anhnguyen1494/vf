@@ -3,6 +3,8 @@
     {{ $news->title }}
 @endsection
 @section('meta')
+    <meta name="description" content="{{ $news->desc_short }}">
+    <meta name="keywords" content="{{ $news->title }}">
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ $news->title }}"/>
     <meta property="og:image" content="{{ url($news->image) }}"/>
