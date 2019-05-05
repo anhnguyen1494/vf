@@ -10,7 +10,7 @@
 @section('after_styles')
     <link rel="stylesheet" href="{{ asset('/frontend/owl/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/frontend/owl/css/owl.theme.default.min.css') }}">
-    <link href="{{ asset('/frontend/css/category.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/frontend/css/category.css').'?t='.time() }}" rel="stylesheet" type="text/css"/>
 @endsection
 
 @section('main')

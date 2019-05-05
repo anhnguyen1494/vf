@@ -12,7 +12,7 @@
 @endsection
 
 @section('after_styles')
-    <link href="{{ asset('/frontend/css/article.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/frontend/css/article.css').'?t='.time() }}" rel="stylesheet" type="text/css"/>
     <style>
         .button-fb {
             position: fixed;

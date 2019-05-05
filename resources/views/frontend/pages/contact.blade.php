@@ -10,7 +10,7 @@
 @endsection
 
 @section('after_styles')
-    <link href="{{ asset('/frontend/css/contact.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('/frontend/css/contact.css').'?t='.time() }}" rel="stylesheet" type="text/css"/>
 @endsection
 
 @section('main')
