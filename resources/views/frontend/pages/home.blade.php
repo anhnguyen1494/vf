@@ -1,7 +1,7 @@
 @extends('frontend.layout')
 
 @section('title')
-    VuFood - Máy Pha Chế Bán Hàng Tự Động #1 Việt Nam
+    Máy Pha Chế Bán Hàng Tự Động #1 Việt Nam
 @endsection
 
 @section('meta')
