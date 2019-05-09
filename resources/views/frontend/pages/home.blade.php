@@ -1,10 +1,19 @@
 @extends('frontend.layout')
 
+@section('title')
+    VuFood - Máy Pha Chế Bán Hàng Tự Động #1 Việt Nam
+@endsection
+
 @section('meta')
+    <meta name="description"
+          content="VuFood cung cấp hệ thống máy pha chế bán hàng tự động chuyên nghiệp #1 Việt Nam.  ✅Tiết kiệm thời gian quản lý, ✅Tiết kiệm chi phí nhân lực,chi phí mặt bằng ✅Tự động báo cáo doanh thu, ✅ Hoạt động 24/7 ">
+    <meta name="keywords"
+          content="máy bán hàng tự động, máy pha chế bán hàng tự động, máy bán hàng tự động, máy bán nước tự động, máy bán cafe tự động, máy pha chế tự động, máy pha cafe tự động, máy pha chế cafe, giải pháp kinh doanh, giải pháp máy bán hàng, giải pháp kinh doanh tự động">
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content=""/>
+    <meta property="og:title" content="VuFood - Máy Pha Chế Bán Hàng Tự Động #1 Việt Nam"/>
     <meta property="og:image" content=""/>
-    <meta property="og:description" content="">
+    <meta property="og:description"
+          content="VuFood cung cấp hệ thống máy pha chế bán hàng tự động chuyên nghiệp #1 Việt Nam.  ✅Tiết kiệm thời gian quản lý, ✅Tiết kiệm chi phí nhân lực,chi phí mặt bằng ✅Tự động báo cáo doanh thu, ✅ Hoạt động 24/7 ">
 @endsection
 
 @section('after_styles')
@@ -112,19 +121,21 @@
                         <div class="invest-content-4i">
                             <h3>ĐẦU TƯ <span>VUFOOD</span></h3>
                             <h6><span>Sinh lời ngay hôm nay</span></h6>
-                            <p class="mt-4">Vufood luôn mang tới những sản phẩm tốt nhất, công nghệ hiện đạt nhất tới người dùng. Chúng tôi cam kết làm hài lòng mọi khách hàng</p>
+                            <p class="mt-4">Vufood luôn mang tới những sản phẩm tốt nhất, công nghệ hiện đạt nhất tới
+                                người dùng. Chúng tôi cam kết làm hài lòng mọi khách hàng</p>
                             <p class="mt-4">Liên hệ ngay với chúng tôi</p>
                             <p>034.569.1910<img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
-                                                 class="ml-2"></p>
+                                                class="ml-2"></p>
                             <p>lienhe.vufood@gmail.com<img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
-                                                            alt="" class="ml-2"></p>
+                                                           alt="" class="ml-2"></p>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6 col-md-6 customer-4i pr-10 text-left">
                         <div class="customer-content-4i">
                             <h3>KHÁCH HÀNG</h3>
                             <h6><span>Chúng tôi luôn quan tâm</span></h6>
-                            <p class="mt-4">Bạn quan tâm và muốn biết thêm thông tin về VuFood? Bạn cần hỗ trợ hoặc phản hồi về dịch vụ của VuFood?</p>
+                            <p class="mt-4">Bạn quan tâm và muốn biết thêm thông tin về VuFood? Bạn cần hỗ trợ hoặc phản
+                                hồi về dịch vụ của VuFood?</p>
                             <p class="mt-4">Liên hệ ngay với chúng tôi</p>
                             <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">034.569.1910
                             </p>
@@ -149,7 +160,8 @@
                         <h3><span>VUFOOD</span> Ở ĐÂU</h3>
                         <h6><span>Chúng tôi chỉ cách bạn vài bước</span></h6>
                         <p>
-                            Tìm kiếm điểm đặt gần nhất của máy pha chế bán hàng tự động VuFood dễ dàng. Hệ thống điểm đặt phủ khắp toàn quốc
+                            Tìm kiếm điểm đặt gần nhất của máy pha chế bán hàng tự động VuFood dễ dàng. Hệ thống điểm
+                            đặt phủ khắp toàn quốc
                         </p>
                         <div class="text-ci-bottom">
                             <p>Số lượng máy: 2500 máy</p>
