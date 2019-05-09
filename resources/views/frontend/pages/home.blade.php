@@ -26,9 +26,9 @@
                         <p>Máy pha chế và bán hàng tự động</p>
                         <h1>VUFOOD</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                            sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitationullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Sứ mệnh ngay từ khi thành lập của VuFood là trở thành nhà cung cấp giải pháp máy pha chế bán
+                            hàng tự động tốt nhất toàn Đông Nam Á. Chúng tôi giúp những người quản lý tối ưu thời gian
+                            quản lý và doanh thu, tiết kiệm tối đa chi phí.
                         </p>
                         <a class="btn btn-primary" href="#" role="button">
                             Tìm hiểu thêm <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -111,12 +111,11 @@
                         <div class="invest-content-4i">
                             <h3>ĐẦU TƯ <span>VUFOOD</span></h3>
                             <h6><span>Sinh lời ngay hôm nay</span></h6>
-                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p class="mt-4">Vufood luôn mang tới những sản phẩm tốt nhất, công nghệ hiện đạt nhất tới người dùng. Chúng tôi cam kết làm hài lòng mọi khách hàng</p>
                             <p class="mt-4">Liên hệ ngay với chúng tôi</p>
-                            <p>0876.969.969 <img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
+                            <p>034.569.1910<img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
                                                  class="ml-2"></p>
-                            <p>kinhdoanh@vufood.com.vn <img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
+                            <p>lienhe.vufood@gmail.com<img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
                                                             alt="" class="ml-2"></p>
                         </div>
                     </div>
@@ -124,12 +123,11 @@
                         <div class="customer-content-4i">
                             <h3>KHÁCH HÀNG</h3>
                             <h6><span>Chúng tôi luôn quan tâm</span></h6>
-                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p class="mt-4">Bạn quan tâm và muốn biết thêm thông tin về VuFood? Bạn cần hỗ trợ hoặc phản hồi về dịch vụ của VuFood?</p>
                             <p class="mt-4">Liên hệ ngay với chúng tôi</p>
-                            <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">0876.969.969
+                            <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">034.569.1910
                             </p>
-                            <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">hotro@vufood.com.vn
+                            <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">hotro.vufood@gmail.com
                             </p>
                         </div>
                     </div>
@@ -138,7 +136,8 @@
             <div class="col-xl-12 col-lg-12 col-md-12 slider-intro">
                 <div class="owl-carousel owl-theme list-item">
                     <div class="s-item">
-                        <img src="{{ asset('/frontend/images/home/slider-img.png') }}" alt="Giới thiệu" class="item-img">
+                        <img src="{{ asset('/frontend/images/home/slider-img.png') }}" alt="Giới thiệu"
+                             class="item-img">
                         <div class="overlay-item"></div>
                     </div>
                 </div>
@@ -149,8 +148,7 @@
                         <h3><span>VUFOOD</span> Ở ĐÂU</h3>
                         <h6><span>Chúng tôi chỉ cách bạn vài bước</span></h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua
+                            Tìm kiếm điểm đặt gần nhất của máy pha chế bán hàng tự động VuFood dễ dàng. Hệ thống điểm đặt phủ khắp toàn quốc
                         </p>
                         <div class="text-ci-bottom">
                             <p>Số lượng máy: 2500 máy</p>
@@ -169,42 +167,52 @@
                         <img src="{{ asset('/frontend/images/contact/1may.png') }}" alt="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-register">
-                        <form action="{{ route('contact.store') }}" method="post" role="form" class="col-xl-9 col-lg-9 col-12 form-re">
+                        <form action="{{ route('contact.store') }}" method="post" role="form"
+                              class="col-xl-9 col-lg-9 col-12 form-re">
                             <h3 class="pb-3 border-bottom mb-3 mt-5">ĐĂNG KÝ TƯ VẤN</h3>
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" class="form-control" name="full_name" id="" placeholder="Họ và tên " required value="{{ old('full_name') }}">
+                                <input type="text" class="form-control" name="full_name" id="" placeholder="Họ và tên "
+                                       required value="{{ old('full_name') }}">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="" placeholder="Email " required value="{{ old('email') }}">
+                                <input type="email" class="form-control" name="email" id="" placeholder="Email "
+                                       required value="{{ old('email') }}">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" name="phone" id="" placeholder="Số điện thoại" required value="{{ old('phone') }}">
+                                <input type="number" class="form-control" name="phone" id="" placeholder="Số điện thoại"
+                                       required value="{{ old('phone') }}">
                                 <span style="color: red">{{ $errors->first('phone') }}</span>
                             </div>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="radio" name="address" value="Hà Nội" id="location_hn" required> <label for="location_hn"> Hà Nội</label>
+                                        <input type="radio" name="address" value="Hà Nội" id="location_hn" required>
+                                        <label for="location_hn"> Hà Nội</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="radio" name="address" value="TP Hồ Chí Minh" id="location_hcm" required> <label for="location_hcm"> TP Hồ Chí Minh</label>
+                                        <input type="radio" name="address" value="TP Hồ Chí Minh" id="location_hcm"
+                                               required> <label for="location_hcm"> TP Hồ Chí Minh</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="radio" name="address" value="Đà Nẵng" id="location_dn" required> <label for="location_dn"> Đà Nẵng</label>
+                                        <input type="radio" name="address" value="Đà Nẵng" id="location_dn" required>
+                                        <label for="location_dn"> Đà Nẵng</label>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-6">
                                     <div class="form-group  btn-check">
-                                        <input type="radio" name="address" value="Tỉnh thành khác" id="location_khac" required> <label for="location_khac"> Tỉnh thành khác</label>
+                                        <input type="radio" name="address" value="Tỉnh thành khác" id="location_khac"
+                                               required> <label for="location_khac"> Tỉnh thành khác</label>
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary col-xl-12 col-lg-12 col-12">ĐĂNG KÝ NHẬN TƯ VẤN</button>
+                            <button type="submit" class="btn btn-primary col-xl-12 col-lg-12 col-12">ĐĂNG KÝ NHẬN TƯ
+                                VẤN
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -257,16 +265,16 @@
                     }
                 }
             });
-            $('.slider-intro').on('click','.overlay-item',function () {
+            $('.slider-intro').on('click', '.overlay-item', function () {
                 var _img = $(this).prev();
                 var src = _img.attr('src');
                 var alt = _img.attr('alt');
-                $('#md-img').css('display','block');
-                $('#img01').attr('src',src);
+                $('#md-img').css('display', 'block');
+                $('#img01').attr('src', src);
                 $('#caption-img').html(alt);
             });
             $('.close-img').click(function () {
-                $('#md-img').css('display','none');
+                $('#md-img').css('display', 'none');
             });
         });
     </script>
