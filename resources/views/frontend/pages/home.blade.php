@@ -47,13 +47,14 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 text-si pr-10">
                         <h3 class="text-right">Công nghệ <span>VUFOOD</span></h3>
                         <h6 class="text-right"><span>Mang tiện ích đến gần bạn hơn</span></h6>
-                        <p>- Quy trình pha chế, bán hàng khép kín và tự động hóa</p>
-                        <p>- Màn hình cảm ứng 1 chạm 40 inches</p>
-                        <p>- Thanh toán linh hoạt</p>
-                        <p>- Tích hợp 3G, quản lý online</p>
-                        <p>- Diện tích nhỏ gọn, lắp đặt nhanh chóng</p>
-                        <p>- Hoạt động 24/7 không nhân viên</p>
-                        <p>- App hỗ trợ người dùng</p>
+                        <p>- Menu lên tới 16 món, có thể chỉnh niêm yết giá</p>
+                        <p>- Quy trình hoàn toàn tự động và khép kín</p>
+                        <p>- Nhận đồ uống chỉ trong vòng 30-60 giây</p>
+                        <p>- Thanh toán bằng tiền mặt, hỗ trợ các cổng thanh toán điện tử</p>
+                        <p>- Tự động vệ sinh và báo lỗi lên hệ thống (nếu có)</p>
+                        <p>- Quản trị trực tuyến 24/7</p>
+                        <p>- Diện tích nhỏ gọn chỉ 0,72 m2</p>
+                        <p>- Tích hợp mobile app hỗ trợ người dùng</p>
                     </div>
                 </div>
             </div>
