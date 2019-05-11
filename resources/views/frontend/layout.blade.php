@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="{{ asset('/frontend/images/icon.png') }}" rel="shortcut icon" type="image/png"/>
+    <link href="{{ asset('/frontend/images/favicon.png') }}" rel="shortcut icon" type="image/png"/>
     <meta property="fb:app_id" content="" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta name="ROBOTS" content="INDEX, FOLLOW">
