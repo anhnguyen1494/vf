@@ -3,7 +3,7 @@
 @section('meta')
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="VuFood - Tin Tức"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="{{ asset('/frontend/images/fb_vufood_2.jpg') }}"/>
     <meta property="og:description" content="">
 @endsection
 

@@ -4,8 +4,8 @@
 @endsection
 @section('meta')
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Liên hệ"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:title" content="Vufood - Liên hệ"/>
+    <meta property="og:image" content="{{ asset('/frontend/images/fb_vufood_2.jpg') }}"/>
     <meta property="og:description" content="">
 @endsection
 

@@ -11,7 +11,7 @@
           content="máy bán hàng tự động, máy pha chế bán hàng tự động, máy bán hàng tự động, máy bán nước tự động, máy bán cafe tự động, máy pha chế tự động, máy pha cafe tự động, máy pha chế cafe, giải pháp kinh doanh, giải pháp máy bán hàng, giải pháp kinh doanh tự động">
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="VuFood - Máy Pha Chế Bán Hàng Tự Động #1 Việt Nam"/>
-    <meta property="og:image" content=""/>
+    <meta property="og:image" content="{{ asset('/frontend/images/fb_vufood.jpg') }}"/>
     <meta property="og:description"
           content="VuFood cung cấp hệ thống máy pha chế bán hàng tự động chuyên nghiệp #1 Việt Nam.  ✅Tiết kiệm thời gian quản lý, ✅Tiết kiệm chi phí nhân lực,chi phí mặt bằng ✅Tự động báo cáo doanh thu, ✅ Hoạt động 24/7 ">
 @endsection
