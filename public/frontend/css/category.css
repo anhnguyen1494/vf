@@ -4,6 +4,14 @@
 .s-item{
     position: relative;
 }
+.s-item img{
+    height: 407px;
+    object-fit: cover;
+}
+.img-blog a img{
+    height: 132px;
+    object-fit: cover;
+}
 .s-text{
     position: absolute;
     left: 0;
@@ -100,8 +108,19 @@
     .s-text{
         padding: 20px 15px 0;
     }
-    .s-text h3,.s-date{
-        font-size: 12px;
+    .s-text h3 {
+        max-width: 90%;
+    }
+    .s-text h3, .s-date {
+        font-size: 16px;
+    }
+    .s-item img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .img-blog a img{
+        height: 198px;
+        object-fit: cover;
     }
 }
 @media (min-width: 576px) {
@@ -110,6 +129,20 @@
     }
     .owl-next{
         right: 19%;
+    }
+    .s-text h3 {
+        max-width: 65%;
+    }
+    .s-text h3, .s-date {
+        font-size: 16px;
+    }
+    .s-item img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .img-blog a img{
+        height: 170px;
+        object-fit: cover;
     }
 }
 @media (min-width: 768px) {
@@ -125,9 +158,6 @@
     .s-text{
         padding: 20px 35px 0;
     }
-    .s-text h3,.s-date{
-        font-size: 16px;
-    }
 }
 @media (min-width: 992px) {
     .owl-nav button img{
@@ -142,8 +172,19 @@
     .s-text{
         padding: 20px 35px 0;
     }
-    .s-text h3,.s-date{
-        font-size: 16px;
+    .s-text h3 {
+        max-width: 65%;
+    }
+    .s-text h3, .s-date {
+        font-size: 20px;
+    }
+    .s-item img{
+        height: 240px;
+        object-fit: cover;
+    }
+    .img-blog a img{
+        height: 170px;
+        object-fit: cover;
     }
 }
 @media (min-width: 1200px) {
@@ -161,6 +202,14 @@
     }
     .s-text h3,.s-date{
         font-size: 1.75rem;
+    }
+    .s-item img{
+        height: 407px;
+        object-fit: cover;
+    }
+    .img-blog a img{
+        height: 150px;
+        object-fit: cover;
     }
 }
 @media only screen and (max-width: 700px) {
