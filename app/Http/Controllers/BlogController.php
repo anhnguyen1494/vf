@@ -10,7 +10,7 @@ class BlogController extends Controller
 {
     public function index(){
         $cat_news = Category::where('slug','tin-tuc')->first();
-        $news = $cat_news->articles()->where('featured',0)->published()->paginate(1);
+        $news = $cat_news->articles()->where('featured',0)->published()->paginate(5);
         $cat_events = Category::where('slug','su-kien')->first();
         $events = $cat_events->articles()->published()->take(5)->get();
         $news_fea = Article::where('featured',1)->published()->get();
