@@ -4,7 +4,6 @@
 @endsection
 @section('meta')
     <meta name="description" content="{{ $news->desc_short }}">
-    <meta name="keywords" content="{{ $news->title }}">
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ $news->title }}"/>
     <meta property="og:image" content="{{ url($news->image) }}"/>
@@ -36,7 +35,6 @@
             </div>
             <div class="col-xl-7 col-lg-7 col-md-10 col-12 content-article mb-5">
                 <h2 class="art-title mb-3">{{ $news->title }}</h2>
-                <p class="art-desc-short">{{ $news->desc_short }}</p>
                 <div class="art-content">
                     {!! $news->content !!}
                 </div>

@@ -29,7 +29,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 first-intro">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 img-fi-mb text-right">
-                        <img src="{{ asset('/frontend/images/home/3may.png') }}" alt="" class="d-block w-100">
+                        <img src="{{ asset('/frontend/images/home/may-pha-che-3.png') }}" alt="" class="d-block w-100">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 text-fi pl-10">
                         <p>Máy pha chế và bán hàng tự động</p>
@@ -44,14 +44,14 @@
                         </a>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 img-fi text-right">
-                        <img src="{{ asset('/frontend/images/home/3may.png') }}" alt="" class="d-block w-100">
+                        <img src="{{ asset('/frontend/images/home/may-pha-che-3.png') }}" alt="" class="d-block w-100">
                     </div>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-md-12 second-intro">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 img-si d-flex justify-content-center">
-                        <img src="{{ asset('/frontend/images/home/1may.png') }}" alt="">
+                        <img src="{{ asset('/frontend/images/home/may-pha-che-2.png') }}" alt="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 text-si pr-10">
                         <h3 class="text-right">Công nghệ <span>VUFOOD</span></h3>
@@ -148,7 +148,37 @@
             <div class="col-xl-12 col-lg-12 col-md-12 slider-intro">
                 <div class="owl-carousel owl-theme list-item">
                     <div class="s-item">
-                        <img src="{{ asset('/frontend/images/home/slider-img.png') }}" alt="Giới thiệu"
+                        <img src="{{ asset('/frontend/images/home/dai-hoc-nong-nghiep.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/dai-hoc-nong-nghiep2.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/dai-hoc-nong-nghiep3.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/khach-hang-tai-diem-vu-food.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/may-ban-hang-tu-dong.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/nguoi-dung-xep-hang.jpg') }}" alt="Giới thiệu"
+                             class="item-img">
+                        <div class="overlay-item"></div>
+                    </div>
+                    <div class="s-item">
+                        <img src="{{ asset('/frontend/images/home/trai-nghiem-san-pham.jpg') }}" alt="Giới thiệu"
                              class="item-img">
                         <div class="overlay-item"></div>
                     </div>
@@ -177,7 +207,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 form-register">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-img text-right pr-5">
-                        <img src="{{ asset('/frontend/images/contact/1may.png') }}" alt="">
+                        <img src="{{ asset('/frontend/images/contact/may-pha-che-1.png') }}" alt="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-register">
                         <form action="{{ route('contact.store') }}" method="post" role="form"
@@ -253,9 +283,8 @@
     <script>
         $(document).ready(function () {
             $('.list-item').owlCarousel({
-                stagePadding: 100,
                 loop: true,
-                items: 4,
+                items: 5,
                 margin: 10,
                 responsiveClass: true,
                 dots: false,
@@ -273,7 +302,7 @@
                         dots: false
                     },
                     1200: {
-                        items: 4,
+                        items: 5,
                         dots: false
                     }
                 }

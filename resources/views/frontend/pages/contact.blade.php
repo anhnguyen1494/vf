@@ -46,7 +46,7 @@
             <div class="col-xl-12 col-lg-12 col-md-12 form-register">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-img text-right pr-5">
-                        <img src="{{ asset('/frontend/images/contact/1may.png') }}" alt="">
+                        <img src="{{ asset('/frontend/images/contact/may-pha-che-1.png') }}" alt="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 fr-register">
                         <form action="{{ route('contact.store') }}" method="post" role="form" class="col-xl-9 col-lg-9 col-12 form-re">
