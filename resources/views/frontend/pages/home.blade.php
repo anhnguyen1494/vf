@@ -283,6 +283,7 @@
     <script>
         $(document).ready(function () {
             $('.list-item').owlCarousel({
+                stagePadding: 100,
                 loop: true,
                 items: 5,
                 margin: 10,
