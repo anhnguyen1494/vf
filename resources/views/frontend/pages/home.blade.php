@@ -199,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-12 col-md-12 map-ci">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.785310540992!2d105.82487881493283!3d21.04127458599169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab09b3c7a5e3%3A0x124972f3b711f018!2zNTYgVGjhu6V5IEtodcOqLCBUaHXhu7UgS2h1w6osIFTDonkgSOG7kywgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1556462805533!5m2!1svi!2s"
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.5313396360307!2d105.80776221535478!3d21.051430292378896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab194bc66a69%3A0x857bb6b048b9def1!2zNjQgVsO1bmcgVGjhu4ssIELGsOG7n2ksIFTDonkgSOG7kywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1562199630819!5m2!1svi!2s"
                                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
