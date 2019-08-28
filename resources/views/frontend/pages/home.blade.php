@@ -123,7 +123,7 @@
                             <h6><span>Sinh lời ngay hôm nay</span></h6>
                             <p class="mt-4">Vufood luôn mang tới những sản phẩm tốt nhất, công nghệ hiện đạt nhất tới
                                 người dùng. Chúng tôi cam kết làm hài lòng mọi khách hàng</p>
-                            <p class="mt-4">Liên hệ ngay với chúng tôi</p>
+                            <p class="mt-4">Hà Nội: số 2 Ngõ 64 phố Võng Thị, phường Bưởi, quận Tây Hồ</p>
                             <p>034.569.1910<img src="{{ asset('/frontend/images/home/icon-mobile.png') }}" alt=""
                                                 class="ml-2"></p>
                             <p>lienhe.vufood@gmail.com<img src="{{ asset('/frontend/images/home/icon-mail.png') }}"
@@ -136,10 +136,10 @@
                             <h6><span>Chúng tôi luôn quan tâm</span></h6>
                             <p class="mt-4">Bạn quan tâm và muốn biết thêm thông tin về VuFood? Bạn cần hỗ trợ hoặc phản
                                 hồi về dịch vụ của VuFood?</p>
-                            <p class="mt-4">Liên hệ ngay với chúng tôi</p>
-                            <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">034.569.1910
+                            <p class="mt-4">Hồ Chí Minh: 319 Bạch Đằng, Phường 15 quận Bình Thạnh</p>
+                            <p><img src="{{ asset('/frontend/images/home/icon-mobile-w.png') }}" alt="" class="mr-2">1800.2087
                             </p>
-                            <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">hotro.vufood@gmail.com
+                            <p><img src="{{ asset('/frontend/images/home/icon-mail-w.png') }}" alt="" class="mr-2">info@vufood.com.vn
                             </p>
                         </div>
                     </div>
