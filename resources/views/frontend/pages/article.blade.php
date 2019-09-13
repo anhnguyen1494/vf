@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-xl-1 col-lg-1 col-md-2 border-right">
                 <div class="row button-fb mt-5 pr-4">
-                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+                    <div class="fb-like" data-href="{{ url()->current() }}" data-width=""
                          data-layout="box_count" data-action="like" data-size="small" data-show-faces="true"
                          data-share="true"></div>
                 </div>
@@ -94,7 +94,7 @@
     @include('frontend.includes.footer')
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=2018493811596330&autoLogAppEvents=1"></script>
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&autoLogAppEvents=1&version=v4.0&appId=2018493811596330"></script>
 @endsection
 
 @section('after_scripts')
